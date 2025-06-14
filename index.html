@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -8,36 +8,55 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fff0f5; /* rose pâle */
+      background-color: #fff0f5; /* pink light */
       color: #333;
     }
+    .header {
+      background-color: #0d0d0d;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+    .header p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
     section {
-      padding: 40px 5%;
+      padding: 40px 6%;
+      background: white;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 1100px;
     }
     h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
+      font-size: 1.8em;
       border-left: 5px solid orange;
-      padding-left: 10px;
+      padding-left: 12px;
+      margin-bottom: 15px;
     }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    p {
+      font-size: 1em;
+      line-height: 1.6em;
     }
     .grid-images {
       display: flex;
       gap: 20px;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
+      margin-top: 20px;
     }
     .grid-images img {
       width: 300px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s;
-    }
-    .grid-images img:hover {
-      transform: scale(1.05);
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     iframe {
       width: 100%;
@@ -46,45 +65,55 @@
       border-radius: 12px;
       margin-top: 20px;
     }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 1em;
+      color: #666;
+    }
   </style>
 </head>
 <body>
 
+  <div class="header">
+    <h1>TEVA CHARTER LLC</h1>
+    <p>Professional & Precise Legal Consulting</p>
+  </div>
+
   <section>
-    <h2>Nos Domaines de Compétence</h2>
-    <ul>
-      <li>Droit des affaires</li>
-      <li>Droit immobilier</li>
-      <li>Litiges commerciaux</li>
-      <li>Négociation de contrats</li>
-      <li>Consultation juridique privée</li>
-      <li>Droit des sociétés</li>
-      <li>Conseil fiscal</li>
-      <li>Planification successorale</li>
-      <li>Conformité réglementaire</li>
-      <li>Droit international</li>
-      <li>Médiation & arbitrage</li>
-    </ul>
+    <h2>About the Firm</h2>
+    <p>
+      TEVA CHARTER LLC is a Florida-based legal consultancy offering sharp, customized legal services to clients across industries. Our firm is grounded in clarity, dedication, and results.
+    </p>
   </section>
 
   <section>
-    <h2>Notre Travail</h2>
+    <h2>Our Work</h2>
     <div class="grid-images">
-      <img src="https://source.unsplash.com/300x200/?law,office" alt="Work 1">
-      <img src="https://source.unsplash.com/300x200/?business,woman" alt="Work 2">
-      <img src="https://source.unsplash.com/300x200/?team,meeting" alt="Work 3">
+      <img src="https://source.unsplash.com/featured/?law,office" alt="Law Office">
+      <img src="https://source.unsplash.com/featured/?lawyer,team" alt="Lawyer Team">
+      <img src="https://source.unsplash.com/featured/?legal,meeting" alt="Meeting">
     </div>
   </section>
 
   <section>
-    <h2>Notre Emplacement</h2>
+    <h2>Our Location</h2>
     <p>📍 Abraham St, Tallahassee, FL 32304, USA</p>
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.225846397946!2d-84.3267027!3d30.4471729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ecf573b8d89311%3A0x36337ae379b3c785!2sAbraham%20St%2C%20Tallahassee%2C%20FL%2032304%2C%20USA!5e0!3m2!1sfr!2sma!4v1718384000000"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.225846397946!2d-84.3267027!3d30.4471729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ecf573b8d89311%3A0x36337ae379b3c785!2sAbraham%20St%2C%20Tallahassee%2C%20FL%2032304%2C%20USA!5e0!3m2!1sen!2sus!4v1718384000000"
       allowfullscreen=""
       loading="lazy">
     </iframe>
   </section>
+
+  <section>
+    <h2>Coming Soon</h2>
+    <p>Our full website is under construction. Stay tuned for updates!</p>
+  </section>
+
+  <div class="footer">
+    &copy; 2025 TEVA CHARTER LLC — All rights reserved. | Phone: 931-584-3869
+  </div>
 
 </body>
 </html>
