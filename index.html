@@ -1,65 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>TEVA CHARTER LLC - Coming Soon</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #ffc0cb; /* rose clair */
-            color: #333;
-        }
-
-        .section {
-            height: 25vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 2px solid #fff;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-
-        a {
-            color: #333;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .phone {
-            font-size: 1.5em;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TEVA CHARTER LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5; /* rose pâle */
+      color: #333;
+    }
+    section {
+      padding: 40px 5%;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-left: 5px solid orange;
+      padding-left: 10px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    .grid-images {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .grid-images img {
+      width: 300px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .grid-images img:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-    <div class="section">
-        <h1>Coming Soon</h1>
-    </div>
+  <section>
+    <h2>Nos Domaines de Compétence</h2>
+    <ul>
+      <li>Droit des affaires</li>
+      <li>Droit immobilier</li>
+      <li>Litiges commerciaux</li>
+      <li>Négociation de contrats</li>
+      <li>Consultation juridique privée</li>
+      <li>Droit des sociétés</li>
+      <li>Conseil fiscal</li>
+      <li>Planification successorale</li>
+      <li>Conformité réglementaire</li>
+      <li>Droit international</li>
+      <li>Médiation & arbitrage</li>
+    </ul>
+  </section>
 
-    <div class="section">
-        <h1>TEVA CHARTER LLC</h1>
+  <section>
+    <h2>Notre Travail</h2>
+    <div class="grid-images">
+      <img src="https://source.unsplash.com/300x200/?law,office" alt="Work 1">
+      <img src="https://source.unsplash.com/300x200/?business,woman" alt="Work 2">
+      <img src="https://source.unsplash.com/300x200/?team,meeting" alt="Work 3">
     </div>
+  </section>
 
-    <div class="section">
-        <h1 class="phone">📞 9315843869</h1>
-    </div>
-
-    <div class="section">
-        <h1>
-            <a href="https://www.google.com/maps/place/Abraham+St,+Tallahassee,+FL+32304" target="_blank">
-                📍 Abraham St, Tallahassee, FL 32304, USA
-            </a>
-        </h1>
-    </div>
+  <section>
+    <h2>Notre Emplacement</h2>
+    <p>📍 Abraham St, Tallahassee, FL 32304, USA</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.225846397946!2d-84.3267027!3d30.4471729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ecf573b8d89311%3A0x36337ae379b3c785!2sAbraham%20St%2C%20Tallahassee%2C%20FL%2032304%2C%20USA!5e0!3m2!1sfr!2sma!4v1718384000000"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
 
 </body>
 </html>
